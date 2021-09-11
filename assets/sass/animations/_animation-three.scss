@@ -1,0 +1,30 @@
+.animation-three {
+    padding: 60px 15px !important;
+    display: flex;
+    justify-content: space-between;
+    .translate {
+        transition: ease-in .5s;
+
+        
+    }
+    .animation-1 {
+        &:hover {
+            transform: translateY(-20px);
+         }
+    }
+    .animation-2 {
+        &:hover {
+            transform: translateY(20px);
+         }
+    }
+    .animation-3 {
+        &:hover {
+            transform: translateX(-20px);
+         }
+    }
+    .animation-4 {
+        &:hover {
+            transform: translateX(20px);
+         }
+    }
+}

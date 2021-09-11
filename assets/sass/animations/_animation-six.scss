@@ -1,0 +1,26 @@
+.animation-six {
+    
+    .skew {
+        transition: 1s;
+    }
+   
+    h2.skew {
+        display: inline-block;
+    }
+    h2.skew:hover {
+        background-color: green;
+        transform: skewX(30deg); 
+    }
+    .animation-1:hover {
+        transform: skewX(30deg);
+    }
+    .animation-2:hover {
+        transform: skewX(-30deg);
+    }
+    .animation-3:hover {
+        transform: skewY(-30deg);
+    }
+    .animation-4:hover {
+        transform: skew(10deg, 25deg);
+    }
+}

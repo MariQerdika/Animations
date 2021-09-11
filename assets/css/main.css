@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.animation-one .move-btn {
+  width: 120px;
+  padding: 10px;
+  background-color: aqua;
+  margin: 20px;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  cursor: pointer;
+}
+
+.animation-one #ease {
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.animation-one #linear {
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.animation-one #ease-in {
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
+
+.animation-one #ease-out {
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.animation-one #ease {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.animation-one .move-btn:hover {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+}
+
+.animation-two button {
+  width: 200px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #070707;
+  color: red;
+  cursor: pointer;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  border: 5px solid red;
+}
+
+.animation-two button:hover {
+  background-color: chartreuse;
+  color: #333;
+  border: 5px solid #333;
+  width: 300px;
+}
+
+.animation-three {
+  padding: 60px 15px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.animation-three .translate {
+  -webkit-transition: ease-in .5s;
+  transition: ease-in .5s;
+}
+
+.animation-three .animation-1:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.animation-three .animation-2:hover {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.animation-three .animation-3:hover {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+
+.animation-three .animation-4:hover {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.animation-four .scale {
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-right: 20px;
+}
+
+.animation-four h2.scale {
+  display: inline-block;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.animation-four h2.scale:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background: green;
+}
+
+.animation-four .animation-1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.animation-four .animation-2:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.animation-five .rotate {
+  -webkit-transition: -webkit-transform 3s;
+  transition: -webkit-transform 3s;
+  transition: transform 3s;
+  transition: transform 3s, -webkit-transform 3s;
+  margin-right: 20px;
+}
+
+.animation-five h2.rotate {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  display: inline-block;
+}
+
+.animation-five h2.rotate:hover {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  background-color: green;
+}
+
+.animation-five .animation-1:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.animation-five .animation-2:hover {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.animation-six .skew {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.animation-six h2.skew {
+  display: inline-block;
+}
+
+.animation-six h2.skew:hover {
+  background-color: green;
+  -webkit-transform: skewX(30deg);
+          transform: skewX(30deg);
+}
+
+.animation-six .animation-1:hover {
+  -webkit-transform: skewX(30deg);
+          transform: skewX(30deg);
+}
+
+.animation-six .animation-2:hover {
+  -webkit-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+}
+
+.animation-six .animation-3:hover {
+  -webkit-transform: skewY(-30deg);
+          transform: skewY(-30deg);
+}
+
+.animation-six .animation-4:hover {
+  -webkit-transform: skew(10deg, 25deg);
+          transform: skew(10deg, 25deg);
+}
+
+.animation-seven .Origin {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.animation-seven .animation-1:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.animation-seven .animation-2 {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+.animation-seven .animation-2:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.animation-seven .animation-4 {
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.animation-seven .animation-4:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.animation-seven .animation-3 {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.animation-seven .animation-3:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  border-bottom: 2px solid #0a5757;
+  padding: 30px 15px;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+/*# sourceMappingURL=main.css.map */

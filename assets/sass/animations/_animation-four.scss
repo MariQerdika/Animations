@@ -1,0 +1,25 @@
+.animation-four {
+    .scale {
+        transition: .5s;
+        margin-right: 20px;
+    }
+    h2.scale {
+        display: inline-block;
+        transition: 1s;
+    }
+    h2.scale:hover {
+        transform: scale(1.2);
+        background: green;
+
+    }
+    .animation-1 {
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    .animation-2 {
+        &:hover {
+            transform: scale(.9);
+        }
+    }
+}

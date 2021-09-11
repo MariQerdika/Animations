@@ -1,0 +1,28 @@
+.animation-seven {
+    .Origin {
+        transition: 1s;
+    }
+    
+    .animation-1:hover {
+        transform: rotate(45deg);
+    }
+    .animation-2 {
+        transform-origin: left top;
+      }
+      .animation-2:hover {
+          transform: rotate(45deg);
+      }
+      .animation-4 {
+        transform-origin: top right;
+      }
+      .animation-4:hover {
+          transform: rotate(45deg);
+      }
+      .animation-3 {
+        transform-origin: top;
+      }
+      .animation-3:hover {
+          transform: rotate(45deg);
+      }
+      
+}

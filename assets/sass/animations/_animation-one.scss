@@ -1,0 +1,29 @@
+.animation-one {
+
+.move-btn {
+    width: 120px;
+    padding: 10px;
+    background-color: aqua;
+    margin: 20px;
+    transition-duration: 2s;
+    cursor: pointer;
+}
+#ease {
+    transition-timing-function: ease; // default, slow fast slow
+}
+#linear {
+    transition-timing-function: linear; // all time the same
+}
+#ease-in {
+    transition-timing-function: ease-in; // slow fast
+}
+#ease-out {
+    transition-timing-function: ease-out; // fast slow
+}
+#ease {
+    transition-timing-function: ease-in-out; // slow fast slow
+}
+.move-btn:hover {
+    transform: translateX(300px);
+}  
+}

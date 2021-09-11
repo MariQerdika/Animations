@@ -1,0 +1,20 @@
+.animation-five {
+    .rotate {
+        transition: transform 3s;
+        margin-right: 20px;
+    }
+    h2.rotate {
+      transition: transform .5s;
+      display: inline-block;
+    }
+    h2.rotate:hover {
+      transform: rotate(10deg);
+      background-color: green;
+    }
+    .animation-1:hover {
+      transform: rotate(360deg); // the same (1turn)
+    }
+    .animation-2:hover {
+        transform: rotate(-180deg);  // the same (-0.5turn)
+      }
+}
