@@ -234,6 +234,27 @@
           transform: rotate(45deg);
 }
 
+.animation-eight {
+  -webkit-perspective: 500px;
+          perspective: 500px;
+}
+
+.animation-eight .rotate {
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-right: 50px;
+}
+
+.animation-eight .animation-1:hover {
+  -webkit-transform: rotateY(60deg);
+          transform: rotateY(60deg);
+}
+
+.animation-eight .animation-2:hover {
+  -webkit-transform: rotateX(60deg);
+          transform: rotateX(60deg);
+}
+
 .container {
   width: 100%;
   max-width: 1320px;

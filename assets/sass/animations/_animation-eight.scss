@@ -1,0 +1,15 @@
+.animation-eight {
+    perspective: 500px;
+
+
+    .rotate {
+        transition: 1s;
+        margin-right: 50px;;
+    }
+    .animation-1:hover {
+       transform: rotateY(60deg);
+    }
+    .animation-2:hover {
+        transform: rotateX(60deg);
+     }
+}
