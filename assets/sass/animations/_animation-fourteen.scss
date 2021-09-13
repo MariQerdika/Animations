@@ -12,6 +12,44 @@
         display: inline-block;
         margin: 20px; 
         transition: 2s;
-        // overflow: hidden;
+        overflow: hidden;
+        color: transparent;
+        background-color: #333;
+
+        &::before {
+            content: "hover me";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #fffa65;
+            color: #262626;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+        }
+        &::after {
+            content: "hover me";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #fffa65;
+            color: #262626;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+            transform: translate(-100%, 100%);
+        }
+        &:hover:before {
+            transform: translate(100%, -100%);
+        }
+        &:hover:after {
+            transform: translate(0, 0);
+        }
     }
 }
