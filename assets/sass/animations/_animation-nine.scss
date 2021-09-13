@@ -1,0 +1,37 @@
+.animation-nine {
+
+
+    a {
+        text-decoration: none;
+        color: #272727;
+        font-family: sans-serif;
+        font-size: 40px;
+        border: 5px solid #272727;
+        padding: 20px 40px;
+        position: relative;
+        display: inline-block;
+        margin: 20px;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: blueviolet;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transform-origin: bottom left;
+            transform: rotate(-90deg);
+            transition: 1s;
+            visibility: hidden;
+            
+        }
+       
+    }
+    a:hover::before {
+        transform: rotate(0deg);
+        visibility: visible;
+   }
+}
