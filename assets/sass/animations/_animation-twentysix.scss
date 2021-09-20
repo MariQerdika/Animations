@@ -1,0 +1,58 @@
+.animation-twentysix {
+
+    a {
+        text-decoration: none;
+        padding: 15px 30px;
+        color: violet;
+        font-size: 18px;
+        letter-spacing: 3px;
+        border: 2px solid red;
+        text-transform: uppercase;
+        position: relative;
+        margin: 20px;
+        display: inline-block;
+        overflow: hidden;
+
+
+        .wave {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: calc(100% + 22px);
+            background-color: #0099ff;
+            transition: all 1s;
+            z-index: -1;
+
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -27px;
+                left: 0;
+                width: 100%;
+                height: 40px;
+                background: url(../images/wave.svg);
+                background-repeat: no-repeat;
+                animation: wave .5s linear infinite;
+            }
+        }
+        &:hover .wave {
+            top: 0;
+
+        }
+        &:hover {
+            color: wheat;
+        }
+    }
+}
+
+@keyframes wave {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 118px;
+    }
+}
