@@ -1,0 +1,62 @@
+.animation-twentyone {
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(196, 106, 22);
+        letter-spacing: 3px;
+        padding: 25px 50px;
+        border: 3px solid rgb(196, 106, 22);
+        font-size: 20px;
+        transition: all 1s;
+        position: relative;
+        margin: 20px;
+        display: inline-block;
+        overflow: hidden;
+
+        &::before,
+        &::after,
+        span::after,
+        span::before {
+            content: "";
+            position: absolute;
+            width: 25%;
+            height: 100%;
+            background-color:yellowgreen;
+            z-index: -1;
+            transition: all .5s;
+        }
+        &::before {
+            bottom: -100%;
+            left: 0;
+        }
+        &:hover::before {
+            bottom: 0;
+            left: 0;
+        }
+        &::after {
+            top: -100%;
+            left: 25%;
+        }
+        &:hover::after {
+            top: 0;
+            left: 25%;
+        }
+        span::before {
+            top: 100%;
+            right: 25%;
+        }
+        &:hover span::before {
+            top: 0;
+            right: 25%;
+        }
+        span::after {
+            top: -100%;
+            right: 0;
+        }
+        &:hover span::after {
+            top: 0;
+            right: 0;
+        }
+    }
+}
