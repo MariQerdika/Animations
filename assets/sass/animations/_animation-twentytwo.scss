@@ -22,7 +22,7 @@
             left: 0;
             border-left: 3px solid red;
             border-right: 3px solid yellow;
-            transition: all 1s;
+            transition: all 1s; 
         }
         &::after {
             content: "";
