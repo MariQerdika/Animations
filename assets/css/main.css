@@ -961,6 +961,82 @@
   top: -30px;
 }
 
+.animation-twentyfive button {
+  background-color: #9b8484;
+  border: none;
+  position: relative;
+  width: 400px;
+  height: 120px;
+  text-transform: uppercase;
+  line-height: 120px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  letter-spacing: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.animation-twentyfive button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background-color: #3b13ac;
+  transition: all .5s;
+}
+
+.animation-twentyfive button:hover::before {
+  left: 0;
+}
+
+.animation-twentyfive button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 4px;
+  background-color: #3b13ac;
+  transition: all .5s;
+}
+
+.animation-twentyfive button:hover::after {
+  right: 0;
+}
+
+.animation-twentyfive button span::before {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #3b13ac;
+  transition: all .5s;
+}
+
+.animation-twentyfive button:hover span::before {
+  bottom: 0;
+}
+
+.animation-twentyfive button span::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #3b13ac;
+  transition: all .5s;
+}
+
+.animation-twentyfive button:hover span::after {
+  top: 0;
+}
+
 .container {
   width: 100%;
   max-width: 1320px;
