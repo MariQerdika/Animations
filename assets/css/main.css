@@ -1758,6 +1758,71 @@
           transform: translateX(0);
 }
 
+.animation-thirtyfive {
+  padding-top: 50px;
+}
+
+.animation-thirtyfive .wrapper {
+  width: 500px;
+  height: 358px;
+  position: relative;
+  overflow: hidden;
+}
+
+.animation-thirtyfive .wrapper img {
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.animation-thirtyfive .wrapper .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  overflow: hidden;
+}
+
+.animation-thirtyfive .wrapper .caption h2 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.animation-thirtyfive .wrapper .caption p {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.animation-thirtyfive .wrapper:hover .caption {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.animation-thirtyfive .wrapper:hover img {
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+}
+
 .container {
   width: 100%;
   max-width: 1320px;
