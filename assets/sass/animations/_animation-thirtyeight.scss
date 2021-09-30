@@ -1,0 +1,16 @@
+.animation-thirtyeight {
+  .color-path {
+    width: 400px;
+    height: 200px;
+    animation: color 5s infinite linear;
+    background: red;
+  }
+}
+@keyframes color {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
