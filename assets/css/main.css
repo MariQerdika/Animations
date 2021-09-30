@@ -1934,6 +1934,35 @@
           transform: scale(1.2) rotate(9deg);
 }
 
+.react {
+  width: 200px;
+  height: 200px;
+  -webkit-animation: animation 3s infinite linear;
+          animation: animation 3s infinite linear;
+}
+
+@-webkit-keyframes animation {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animation {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1320px;
