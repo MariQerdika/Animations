@@ -1993,6 +1993,124 @@
   }
 }
 
+.item39 {
+  position: relative;
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.item39 img {
+  width: 100%;
+}
+
+.item39::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 200%;
+  opacity: 0.8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #6f7ad8;
+  -webkit-transform: translate(550px, 300px) rotate(30deg);
+          transform: translate(550px, 300px) rotate(30deg);
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.item39:hover::before {
+  -webkit-transform: translate(-50px, -150px) rotate(30deg);
+          transform: translate(-50px, -150px) rotate(30deg);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.item39 .caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #fff;
+}
+
+.item39 h2 {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transform: translate(200px, -200px);
+          transform: translate(200px, -200px);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.item39:hover h2 {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.item39 p {
+  font-size: 16px;
+  width: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(-200px, 200px);
+          transform: translate(-200px, 200px);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.item39:hover p {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.item39 a {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  color: #6f7ad8;
+  background-color: salmon;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.item39:hover a {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .container {
   width: 100%;
   max-width: 1320px;
