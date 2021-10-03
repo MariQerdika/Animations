@@ -1,0 +1,40 @@
+.item001 {
+  .box {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background: #020202;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 150px;
+      height: 130%;
+      background: linear-gradient(#f111e0, #08ffea);
+      animation: rotate 5s infinite linear;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 5px;
+      background: #020202;
+    }
+    .h3 {
+      font-size: 24px;
+      color: #fff;
+      z-index: 1;
+    }
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

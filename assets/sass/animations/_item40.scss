@@ -19,7 +19,7 @@
     transition: 0.5s;
     background: rgb(111, 122, 216);
     transform: translate(650px, -100px) rotate(180deg);
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
   }
   &:hover::before {
     transform: translate(0, 0) rotate(0deg);
