@@ -2704,6 +2704,79 @@ body {
   }
 }
 
+body {
+  overflow: hidden;
+}
+
+.hexlight {
+  height: 100vh;
+  overflow: hidden;
+  background: #222;
+}
+
+.hexlight .row {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: -32px;
+  margin-left: -50px;
+}
+
+.hexlight .row:nth-child(even) {
+  margin-left: 1px;
+}
+
+.hexlight .hexagon2 {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 110px;
+  background-color: #252525;
+  line-height: 100px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #fff;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin: 1px;
+  -webkit-transition: 2s;
+  transition: 2s;
+  z-index: 2;
+}
+
+#cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #0f0;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: animateColor 5s linear infinite;
+          animation: animateColor 5s linear infinite;
+  z-index: 1;
+}
+
+a.hexalight {
+  display: block;
+  text-align: right;
+}
+
+@keyframes animateColor {
+  0% {
+    -webkit-filter: hue-rotate(0deg) blur(50px);
+            filter: hue-rotate(0deg) blur(50px);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg) blur(50px);
+            filter: hue-rotate(360deg) blur(50px);
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1320px;
