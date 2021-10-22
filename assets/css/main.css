@@ -2585,7 +2585,6 @@ body {
           animation: animateColor 5s linear infinite;
   height: 100vh;
   overflow: hidden;
-  background: #222;
 }
 
 .hex2 .row {
@@ -2756,8 +2755,8 @@ body {
   border-radius: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: animateColor 5s linear infinite;
-          animation: animateColor 5s linear infinite;
+  -webkit-animation: animateColorBlur 5s linear infinite;
+          animation: animateColorBlur 5s linear infinite;
   z-index: 1;
 }
 
@@ -2766,7 +2765,18 @@ a.hexalight {
   text-align: right;
 }
 
-@keyframes animateColor {
+@-webkit-keyframes animateColorBlur {
+  0% {
+    -webkit-filter: hue-rotate(0deg) blur(50px);
+            filter: hue-rotate(0deg) blur(50px);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg) blur(50px);
+            filter: hue-rotate(360deg) blur(50px);
+  }
+}
+
+@keyframes animateColorBlur {
   0% {
     -webkit-filter: hue-rotate(0deg) blur(50px);
             filter: hue-rotate(0deg) blur(50px);

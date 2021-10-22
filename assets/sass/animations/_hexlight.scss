@@ -43,14 +43,14 @@ body {
   background-color: #0f0;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  animation: animateColor 5s linear infinite;
+  animation: animateColorBlur 5s linear infinite;
   z-index: 1;
 }
 a.hexalight {
   display: block;
   text-align: right;
 }
-@keyframes animateColor {
+@keyframes animateColorBlur {
   0% {
     filter: hue-rotate(0deg) blur(50px);
   }
