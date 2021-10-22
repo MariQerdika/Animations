@@ -2526,6 +2526,8 @@ body {
   transition: 1s;
   color: #fff;
   margin-right: 50px;
+  -webkit-animation: animateColor 5s linear infinite;
+          animation: animateColor 5s linear infinite;
 }
 
 .hexagon::before {
@@ -2556,16 +2558,26 @@ body {
   transition: 1s;
 }
 
-.hexagon:hover {
-  background-color: green;
+@-webkit-keyframes animateColor {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
 }
 
-.hexagon:hover::after {
-  border-left: 30px solid green;
-}
-
-.hexagon:hover::before {
-  border-right: 30px solid green;
+@keyframes animateColor {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
 }
 
 .hex2 {
@@ -2611,17 +2623,6 @@ body {
   background-color: cyan;
   -webkit-transition: 0s;
   transition: 0s;
-}
-
-@-webkit-keyframes animateColor {
-  0% {
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
-  }
-  100% {
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
-  }
 }
 
 @keyframes animateColor {
