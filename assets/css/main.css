@@ -2585,6 +2585,7 @@ body {
           animation: animateColor 5s linear infinite;
   height: 100vh;
   overflow: hidden;
+  background: #282828;
 }
 
 .hex2 .row {
