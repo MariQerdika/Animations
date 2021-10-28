@@ -3056,4 +3056,67 @@ a.hexalight {
             transform: translateX(-100%);
   }
 }
+
+.rain {
+  position: relative;
+  width: 100%;
+  height: 97vh;
+  background: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: rain 2s linear infinite;
+          animation: rain 2s linear infinite;
+}
+
+.rain::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/rain.png);
+  -webkit-animation: drop 2s linear infinite;
+          animation: drop 2s linear infinite;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30% 100%;
+  }
+}
+
+@keyframes drop {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30% 100%;
+  }
+}
+
+@-webkit-keyframes rain {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes rain {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
 /*# sourceMappingURL=main.css.map */
