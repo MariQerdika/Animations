@@ -3276,4 +3276,36 @@ canvas {
   height: 100vh;
   background-color: #000;
 }
+
+.split-b {
+  height: 300vh;
+}
+
+.split {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.split__side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/puppy.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.split .split__side#side1 {
+  -webkit-clip-path: polygon(0 0, 0 100%, 31% 100%, 70% 73%, 33% 50%, 71% 32%, 34% 1%);
+          clip-path: polygon(0 0, 0 100%, 31% 100%, 70% 73%, 33% 50%, 71% 32%, 34% 1%);
+}
+
+.split .split__side#side2 {
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 31% 100%, 70% 73%, 33% 50%, 71% 32%, 34% 1%);
+          clip-path: polygon(100% 0, 100% 100%, 31% 100%, 70% 73%, 33% 50%, 71% 32%, 34% 1%);
+}
 /*# sourceMappingURL=main.css.map */
