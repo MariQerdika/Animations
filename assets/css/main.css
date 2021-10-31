@@ -3346,4 +3346,56 @@ canvas {
   -webkit-box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.3);
           box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.3);
 }
+
+.calc_wrapper {
+  background-color: cornflowerblue;
+  width: 280px;
+  padding: 20px;
+}
+
+.calculator {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+}
+
+.calculator .value {
+  grid-column: span 4;
+  height: 60px;
+  text-align: right;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.calculator span {
+  display: -ms-grid;
+  display: grid;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  background: #0c2835;
+  place-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.calculator span:active {
+  background-color: rosybrown;
+  color: red;
+}
+
+.calculator span.clear {
+  width: 120px;
+  grid-column: span 2;
+}
+
+.calculator span.plus {
+  grid-row: span 2;
+  height: 120px;
+}
+
+.calculator span.equal {
+  background-color: #0f232c;
+}
 /*# sourceMappingURL=main.css.map */
