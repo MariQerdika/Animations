@@ -157,6 +157,82 @@ body {
   opacity: 0;
 }
 
+.Hamburger__btn7 {
+  transition: 0.5s;
+}
+
+.Hamburger__btn7.active {
+  transform: rotate(25deg);
+}
+
+.Hamburger__btn7.active .Hamburger__lines:nth-child(1) {
+  width: 40%;
+}
+
+.Hamburger__btn7.active .Hamburger__lines:nth-child(2) {
+  width: 65%;
+}
+
+.Hamburger__btn7.active .Hamburger__lines:nth-child(3) {
+  width: 90%;
+}
+
+.Hamburger__btn7 .Hamburger__lines:nth-child(1) {
+  top: 0;
+}
+
+.Hamburger__btn7 .Hamburger__lines:nth-child(2) {
+  top: 6px;
+}
+
+.Hamburger__btn7 .Hamburger__lines:nth-child(3) {
+  top: 12px;
+}
+
+.Hamburger__btn8 {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.Hamburger__btn8.active {
+  transform: rotate(45deg);
+}
+
+.Hamburger__btn8::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border: 5px solid transparent;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.Hamburger__btn8.active::before {
+  transition-delay: 0.3s !important;
+  border: 5px solid #000;
+}
+
+.Hamburger__btn8.active .lines {
+  width: 35px;
+}
+
+.Hamburger__btn8.active .Hamburger__lines:nth-child(2) {
+  transition: all 0.1s ease-in !important;
+  opacity: 0;
+}
+
+.Hamburger__btn8.active .Hamburger__lines:nth-child(1) {
+  transform: translateY(10px);
+}
+
+.Hamburger__btn8.active .Hamburger__lines:nth-child(3) {
+  transform: translateY(-10px) rotate(90deg);
+}
+
 .react {
   width: 200px;
   height: 200px;
